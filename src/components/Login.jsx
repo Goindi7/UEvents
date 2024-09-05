@@ -1,10 +1,7 @@
-
-
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
-import './Login.css'
+import './Login.css';
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -31,10 +28,11 @@ function Login() {
       body: JSON.stringify(formData)
     });
     const data = await res.json();
-    console.log(data);
 
     if (res.ok) {
-      alert("succesfully logined!!")
+      alert("Successfully logged in!");
+      
+      localStorage.setItem('username', formData.username);
       navigate('/');
     } else {
       alert(data.msg);
@@ -43,10 +41,8 @@ function Login() {
 
   return (
     <>
-    <div className="outerhero">
-        <Navbar data-aos="fade-up" data-aos-duration="3000"/>
-       
-
+      <div className="outerhero">
+        <Navbar data-aos="fade-up" data-aos-duration="3000" />
       </div>
       <div className="logincontainer">
         <section className='banner loginbg'>
@@ -54,7 +50,7 @@ function Login() {
             <div className="form-container" id="login-form">
               <h1 className='headlo'>Login</h1>
               <form className='loginfo' onSubmit={handleSubmit}>
-                <input type="text" id="username" placeholder='Username' className='logininput' name="username" required onChange={handleInput}/>
+                <input type="text" id="username" placeholder='Username' className='logininput' name="username" required onChange={handleInput} />
                 <input type="password" id="password" placeholder='Password' className='logininput' name="password" required onChange={handleInput} />
                 <button className='loginbutton' type="submit">Login</button>
               </form>
@@ -63,12 +59,9 @@ function Login() {
           </div>
         </section>
       </div>
-      <section className='banner footer' style={{padding:"20vh 0"}}></section>
+      <section className='banner footer' style={{ padding: "20vh 0" }}></section>
     </>
   );
 }
 
 export default Login;
-
-
-

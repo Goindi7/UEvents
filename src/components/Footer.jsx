@@ -11,8 +11,8 @@ const Footer = () => {
     {
       title: 'Navigation',
       items: [
-        { name: 'Home', link: '#home' },
-        { name: 'About Us', link: '#about' },
+        { name: 'Home', link: '/' },
+        { name: 'About Us', link: '#mainabout' },
         { name: 'What We Do', link: '#what-we-do' },
         { name: 'To The Power of 10', link: '#power-of-10' },
         { name: 'Donate', link: '#donate' }
