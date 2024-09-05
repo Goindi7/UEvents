@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css'
@@ -17,45 +17,27 @@ import Photos from './components/Photos';
 import Contact from './components/Contact';
 
 
-
-
-
-
 const MainPage = () => {
-  
+
   useEffect(() => {
-             AOS.init();
-           }, []);
-  
+    AOS.init();
+  }, []);
 
   return (
-        <>
-        <div className="outerhero">
-        <Navbar data-aos="fade-up" data-aos-duration="3000"/>
-        <Hero/>
-
+    <>
+      <div className="outerhero">
+        <Navbar data-aos="fade-up" data-aos-duration="3000" />
+        <Hero />
       </div>
-      
-      
-      <About/>
-      <Whatwedo/>
-      <Stats/>
-      <Use/>
-      <Mainevent/>
-      <Organizers/>
-      <Contact/>
-      <Photos/>
-      <Footer/>
-
-      
-    
-
-    
-      
-    
-
-      
-    
+      <About />
+      <Whatwedo />
+      <Stats />
+      <Use />
+      <Mainevent />
+      <Organizers />
+      <Contact />
+      <Photos />
+      <Footer />
     </>
   );
 };
