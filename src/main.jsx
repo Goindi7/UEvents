@@ -12,11 +12,11 @@ const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<App/>}/>
-      {/* <Route path='/login' element={<Login/>}/> */}
-      <Route path='/logint' element={<Login/>}/>
+      <Route path='/login' element={<Login/>}/>
+      {/* <Route path='/logint' element={<Login/>}/> */}
       <Route path='/signup' element={<Signup/>}/>
-      {/* <Route path='/registerev/:eventname' element={<RegisterEvent/>}/> */}
-      <Route path='/registerevs/:eventname' element={<RegisterEvent/>}/>
+      <Route path='/registerev/:eventname' element={<RegisterEvent/>}/>
+      {/* <Route path='/registerevs/:eventname' element={<RegisterEvent/>}/> */}
       </Route>
   )
 )

@@ -4,8 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Organizers.css';
 import { Button } from '@mui/material';
-import ss from '../assets/images/1pic.jpeg';
-import sk from '../assets/images/2pic.jpeg';
+import ss from '../assets/images/1pic.jpg';
+import sk from '../assets/images/2pic.jpg';
 
 const organizers = [
   {
