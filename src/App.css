@@ -8,19 +8,22 @@
   padding: 0;
   
 }
+
 .spantext{
   color: #ddd;
 }
 .navbar {
   display: flex;
-  z-index: 1000;
+  /* z-index: 1000; */
   position: sticky;
-  top: 0;
+  /* top: 0; */
   background-color: #000000;
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
   padding: 0 3vw;
+  height: 8vh;
+  padding-top: 2vh;
 
 }
 #sliding{
@@ -65,7 +68,7 @@
 
 .login-btn {
   background-color:#ce1317;
-  padding: 2.5vh 3vw;
+  padding: 1.5vh 1.5vw;
   font-size: 1.5vw;
   color: #ffffff;
   border: none;
@@ -112,6 +115,7 @@
   padding: 0 15vw;
   /* margin-bottom: 11vh; */
   text-align: center;
+  height: 90vh;
 }
 
 .hero-content h1 {
