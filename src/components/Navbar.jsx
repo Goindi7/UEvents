@@ -36,7 +36,7 @@ function Navbar() {
 
         {username ? (
           <div className="user-controls">
-            <span>Hi, {username}</span>
+            <span className="spantext">Hi, {username}</span>
             <button className="login-btn" onClick={handleLogout}>
               Logout
             </button>
