@@ -14,9 +14,9 @@
 }
 .navbar {
   display: flex;
-  /* z-index: 1000; */
+  z-index: 1000;
   position: sticky;
-  /* top: 0; */
+  top: 0;
   background-color: #000000;
   overflow: hidden;
   justify-content: space-between;
