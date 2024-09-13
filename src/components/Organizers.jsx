@@ -49,14 +49,14 @@ const Organizers = () => {
     slidesToScroll: 1,
     autoplay: true,
     responsive: [
-      {
-        breakpoint: 1441,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          dots: true,
-        },
-      },
+      // {
+      //   breakpoint: 1441,
+      //   settings: {
+      //     slidesToShow: 4,
+      //     slidesToScroll: 1,
+      //     dots: true,
+      //   },
+      // },
       {
         breakpoint: 1024,
         settings: {

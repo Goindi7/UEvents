@@ -1,6 +1,8 @@
 *{
   margin: 0;
-  /* overflow-x: hidden; */
+  /* overflow-x: visible; */
+  /* overflow-y: hidden; */
+  
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
 
@@ -332,7 +334,7 @@
 .containerti {
   padding: 10px 50px;
   position: relative;
-  width: 40.5%;
+  width: 41.5%;
   opacity: 0;
 }
 
