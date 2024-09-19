@@ -45,7 +45,7 @@ const RegisterEvent = () => {
   return (
     <>
     <div className="outerhero">
-        <Navbar data-aos="fade-up" data-aos-duration="3000"/>
+        <Navbar data-aos="fade-up" data-aos-duration="3000" showOnlyLogo={true}/>
        
 
       </div>

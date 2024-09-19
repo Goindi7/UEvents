@@ -32,7 +32,7 @@ html, body {
   align-items: center;
   padding: 0 3vw;
   height: 8vh;
-  padding-top: 2vh;
+  padding-top: 3vh;
 }
 
 #sliding{
@@ -862,6 +862,7 @@ html, body {
   background:url('./assets/images/bg_stat3.png') no-repeat right;
   background-size:cover;
   padding:4vh 0;
+  padding-top: 15vh;
 }
 
 .registerContainer {
